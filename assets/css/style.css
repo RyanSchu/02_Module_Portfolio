@@ -42,7 +42,7 @@ nav {
 }
 
 header h1 {
-    display: inline;
+    /* display: inline; */
     text-align: left;
 }
 
@@ -76,14 +76,19 @@ body {
     color: var(--dark-blue);
 }
 
-
+ main {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+ }
 #avatar {
     display: flex;
     justify-content: center;
 }
 
-#avatar image {
+#avatar img {
     position: relative;
+    margin-left: 4rem;
 }
 
 .container {
@@ -216,3 +221,49 @@ body {
     position: relative;
     height: 4rem;
 }
+
+
+/* tablet or half web browser */
+
+
+/* larger phone */
+
+
+/* smaller phone screen */
+@media screen and (max-width: 450px) {
+    nav {
+        display: unset;
+
+    }
+    nav ul li {
+        margin-left: 0;
+        margin-right: 0.5rem;
+    }
+    nav ul:last-child {
+        margin-right: 0rem;
+    }
+
+    header h1{
+        display: block;
+        font-size: 3.5rem; 
+    }
+
+    header h3 {
+        font-size: 2rem;
+    }
+
+    .container {
+        margin-left: 1rem;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .card-header h2 {
+        font-size: 4rem;
+    }
+
+    .card-content {
+       width: 80%; 
+    }
+    /* Change the header color */
+  }
