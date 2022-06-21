@@ -376,6 +376,18 @@ footer h5::after{
 }
 
 /* larger phone */
+@media screen and (max-width: 750px) {
+    .card-content {
+        margin-right: 4rem;
+     }
+     aside {
+        flex-basis: 10%;
+    }
+    header h3 {
+        font-size: 2rem;
+        text-shadow: none;
+    }
+}
 
 
 /* smaller phone screen */
@@ -385,21 +397,20 @@ footer h5::after{
 
     }
     nav ul li {
-        margin-left: 0;
-        margin-right: 0.5rem;
-    }
-    nav ul:last-child {
-        margin-right: 0rem;
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
     }
 
+
     header h1{
+        margin-left:0.5rem;
         display: block;
         font-size: 3.5rem; 
         text-shadow: none;
     }
 
     header h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-shadow: none;
     }
 
@@ -415,7 +426,7 @@ footer h5::after{
     }
 
     .card-content {
-       width: 80%; 
+       margin-right: 4rem; 
     }
 
     .subcard-title h3 {
@@ -423,6 +434,13 @@ footer h5::after{
     }
     .subcard-title h4 {
         font-size: 1.5rem;
+    }
+    aside {
+        flex-basis: 0%;
+    }
+    #contact img {
+        position: relative;
+        height: 3rem;
     }
     /* Change the header color */
   }
