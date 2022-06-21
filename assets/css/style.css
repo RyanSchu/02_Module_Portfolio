@@ -131,6 +131,7 @@ aside {
 #avatar img {
     position: relative;
     margin-left: 4rem;
+    height: 20rem;
 }
 
 
@@ -373,11 +374,21 @@ footer h5::after{
         font-size: 2rem;
         text-shadow: none;
     }
+    #avatar img {
+        position: relative;
+        margin-left: 4rem;
+        height: 15rem;
+    }
 }
 
 
 /* smaller phone screen */
 @media screen and (max-width: 450px) {
+    #avatar img {
+        position: relative;
+        margin-left: 4rem;
+        height: 10rem;
+    }
     nav {
         display: unset;
 
