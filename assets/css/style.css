@@ -285,19 +285,19 @@ aside {
 
 #contact .card-content {
     display: flex;
+    justify-content: center;
+
 }
 
 #contact ul {
-    align-items: center;
-    justify-content: center;
-    align-content: space-between;
+    
+    
 }
+
+
 #contact ul li {
-    display: inline-block;
+    display: inline;
     list-style-type: none;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    position: relative;
 }
 
 #contact p {
@@ -336,6 +336,16 @@ footer h5::after{
 }
 
 
+
+@media  screen and (max-width: 1700) {
+    #contact ul{
+        text-align: center;
+    }
+
+    #contact ul li {
+        display: block;
+    }
+}
 
 
 /* tablet or half web browser */
