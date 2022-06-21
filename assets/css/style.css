@@ -1,3 +1,4 @@
+/* global variables including theme */
 :root {
     --dark-blue: #003049;
     --beige: #ffffff;
@@ -12,9 +13,8 @@
     src: url("../font/ChevadisplayRegular-1G5ve.otf") format("opentype");
 }
 
-
+/* styling for basic elements after reset */
 h1 {
-    /* 4rem = 40px (4 * 10px) */
     font-size: 7rem;
   }
   
@@ -32,6 +32,7 @@ h5 {
     font-size: 1rem;
 }
 
+/* style for nav bar and header */
 header {
     background-color: var(--dark-blue);
     color: var(--beige);
@@ -53,7 +54,6 @@ a {
 }
 
 header h1 {
-    /* display: inline; */
     text-align: left;
     margin-left: 2.5rem;
 }
@@ -84,11 +84,14 @@ header a:hover {
     color: #ffc99d;
 }
 
+
+/* set backgroud */
 body {
     background-color: var(--beige);
     color: var(--dark-blue);
 }
 
+/* create container so whitespace shrinks faster than main element */
 #super-container {
  display: flex;
  flex-direction: row;
@@ -101,7 +104,7 @@ aside {
     flex-grow: 20;
 }
 
-
+/* main content styling */
  main {
      display: flex;
      justify-content: center;
@@ -110,7 +113,16 @@ aside {
      flex-grow: 0;
      margin-right: 3rem;
  }
+/* foundational container for content cards */
+ .container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
 
+/* avatar image styling */
 #avatar {
     display: flex;
     justify-content: center;
@@ -121,14 +133,8 @@ aside {
     margin-left: 4rem;
 }
 
-.container {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding: 0.5rem;
-    flex-shrink: 0;
-    flex-grow: 1;
-}
 
+/* styling for content cards */
 .card {
     padding: 1rem;
     flex: 0 0 18rem;
@@ -138,14 +144,12 @@ aside {
 }
 
 
-
 .card-header {
     position: relative;
     margin-top: -3.25rem;
     padding: 0.5rem;
     width: max-content;
     color: var(--dark-blue);
-    /* text-shadow: -1px 0 var(--beige), 0 1px var(--beige), 1px 0 var(--beige), 0 -1px var(--beige); */
     font-family: retro ;
     background-color: var(--beige);
 }
@@ -176,7 +180,6 @@ aside {
     border-top-left-radius: 2rem;
     margin-top: -2rem;
     margin-right: -2rem;
-    /* box-shadow: -0.25rem 0.25rem 0.25rem 0rem rgba(165, 42, 42, 0.342); */
 }
 
 
@@ -192,7 +195,6 @@ aside {
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 2rem;
     border-top-left-radius: 2rem;
-
     margin-top: -2rem;
     margin-right: -2rem;
 }
@@ -212,11 +214,8 @@ aside {
 
 } 
 
-#about {
 
-}
-
-
+/* special styling for work section subcards */
 #work .card-content {
     display: flex;
     flex-direction: column;
@@ -283,17 +282,13 @@ aside {
     background-image: none;
 }
 
+/* special styling for contact icons */
+
 #contact .card-content {
     display: flex;
     justify-content: center;
 
 }
-
-#contact ul {
-    
-    
-}
-
 
 #contact ul li {
     display: inline;
@@ -316,6 +311,8 @@ aside {
 }
 
 
+/* style the footer */
+
 footer {
     background-color: var(--dark-blue);
     color: var(--beige);
@@ -335,17 +332,6 @@ footer h5::after{
     margin-left: 1rem;
 }
 
-
-
-@media  screen and (max-width: 1700) {
-    #contact ul{
-        text-align: center;
-    }
-
-    #contact ul li {
-        display: block;
-    }
-}
 
 
 /* tablet or half web browser */
@@ -442,5 +428,4 @@ footer h5::after{
         position: relative;
         height: 3rem;
     }
-    /* Change the header color */
   }
