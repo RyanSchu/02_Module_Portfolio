@@ -24,6 +24,9 @@ h2 {
 h3 {
     font-size: 3rem;
 }
+h4 {
+    font-size: 2rem;
+}
 
 
 header {
@@ -203,21 +206,21 @@ body {
     margin-right: 4%;
     margin-bottom: 1rem;
     background-size: cover;
-    background-color: #002f495b; /* Tint color */
-    background-blend-mode: multiply;
+    /* background-color: #002f495b; /* Tint color */
+    /* background-blend-mode: multiply; */
     border-radius: 1rem;
     display: flex;
     border-style: solid;
     border-color: var(--dark-blue);
     border-width: 0.5rem;
+    /* display: flex; */
+    text-align: center;
 }
 
 .subcard:hover {
-    background-blend-mode: normal;
     background-image: none;
-    background-color: #ffffff;
 }
-.subcard:hover h3{
+.subcard:hover h3, .subcard:hover h4{
     color: var(--dark-blue);
     text-shadow: none;
 } 
@@ -232,7 +235,7 @@ body {
 
 
 .primary-subcard{
-    background-image: url("https://via.placeholder.com/700");
+    background-image: url("../images/bg-1-jason-leung.jpg");
     height: 30rem;
 }
 
@@ -240,16 +243,21 @@ body {
     height: 10rem;
 }
 
+
 #subcard-2 {
-    background-image: url("https://via.placeholder.com/700");
+    background-image: url("../images/li-zhang-me4ymQcuImg-unsplash.jpg");
 }
 
 #subcard-3 {
-    background-image: url("https://via.placeholder.com/700");
+    background-image: url("../images/alt-bg-4-pexels-dids-3045825.jpg");
 }
 
 #subcard-4 {
-    background-image: url("https://via.placeholder.com/700");
+    background-image: url("../images/simon-lee-zft-W1kVEhg-unsplash.jpg");
+}
+
+#subcard-2:hover, #subcard-3:hover, #subcard-4:hover {
+    background-image: none;
 }
 
 #contact .card-content {
