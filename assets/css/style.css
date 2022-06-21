@@ -28,6 +28,9 @@ h4 {
     font-size: 2rem;
 }
 
+h5 {
+    font-size: 1rem;
+}
 
 header {
     background-color: var(--dark-blue);
@@ -293,6 +296,25 @@ body {
 }
 
 
+footer {
+    background-color: var(--dark-blue);
+    color: var(--beige);
+    font-family: retro;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer h5::before{
+    content: var(--flower-symbol);
+    margin-right: 1rem;
+}
+
+footer h5::after{
+    content: var(--flower-symbol);
+    margin-left: 1rem;
+}
+
 /* tablet or half web browser */
 
 
@@ -316,10 +338,12 @@ body {
     header h1{
         display: block;
         font-size: 3.5rem; 
+        text-shadow: none;
     }
 
     header h3 {
         font-size: 2rem;
+        text-shadow: none;
     }
 
     .container {
