@@ -41,6 +41,10 @@ nav {
     display: flex;
 }
 
+a {
+    text-decoration: none;
+}
+
 header h1 {
     /* display: inline; */
     text-align: left;
@@ -62,8 +66,8 @@ nav ul li{
  }
 
 nav ul li a {
-color: #ffffff;
-text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 
@@ -186,8 +190,66 @@ body {
 
 }
 
-#work {
 
+#work .card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.subcard {
+    float: center;
+    width: 96%;
+    margin: auto;
+    margin-right: 4%;
+    margin-bottom: 1rem;
+    background-size: cover;
+    background-color: #002f495b; /* Tint color */
+    background-blend-mode: multiply;
+    border-radius: 1rem;
+    display: flex;
+    border-style: solid;
+    border-color: var(--dark-blue);
+    border-width: 0.5rem;
+}
+
+.subcard:hover {
+    background-blend-mode: normal;
+    background-image: none;
+    background-color: #ffffff;
+}
+.subcard:hover h3{
+    color: var(--dark-blue);
+    text-shadow: none;
+} 
+
+.subcard-title{
+    margin: auto;
+    font-family: retro;
+    color: var(--beige);
+    text-shadow: -1px 0 var(--dark-blue), 0 1px var(--dark-blue), 1px 0 var(--dark-blue), 0 -1px var(--dark-blue);
+}
+
+
+
+.primary-subcard{
+    background-image: url("https://via.placeholder.com/700");
+    height: 30rem;
+}
+
+.minor-subcard {
+    height: 10rem;
+}
+
+#subcard-2 {
+    background-image: url("https://via.placeholder.com/700");
+}
+
+#subcard-3 {
+    background-image: url("https://via.placeholder.com/700");
+}
+
+#subcard-4 {
+    background-image: url("https://via.placeholder.com/700");
 }
 
 #contact .card-content {
